@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:background="@drawable/note_background"
+    android:elevation="4dp"
+    android:clipToPadding="false">
+
+    <!-- Title - Should be displayed first and bold -->
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- Subtitle - Should be displayed second and italic -->
+    <TextView
+        android:id="@+id/note_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <!-- Content - Should be displayed last and regular -->
+    <TextView
+        android:id="@+id/note_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <!-- Delete Button - Positioned as needed -->
+    <ImageButton
+        android:id="@+id/delete_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:contentDescription="Delete Note"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="end|top" />
+
+</LinearLayout>
